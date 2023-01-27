@@ -9,6 +9,9 @@ const Navibar = () => {
             <a href='/'>Home</a>
           </li>
           <li>
+            <a href='/signup'>Signup</a>
+          </li>
+          <li>
             <a href='/profile'>Profile</a>
           </li>
           <li>
