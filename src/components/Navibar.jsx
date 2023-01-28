@@ -4,6 +4,7 @@ const Navibar = () => {
   return (
     <div>
       <nav>
+        <h2 className='title'>STRANGER(S) THINGS</h2>
         <ul>
           <li>
             <a href='/'>Home</a>

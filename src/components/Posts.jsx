@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import POSTS_URL from './constants';
+import { POSTS_URL } from './constants';
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    fetch(POSTS_URL)
+      .then(response => response.json())
+      .then(result => {
+        setPosts(result.data.posts);
+      })
+      .catch(console.error);
+  }, []);
   
-
   return (
     <div className='posts-container'>
-      <h1>All Strange Posts</h1>
+      <h2>All Strange Posts</h2>
       <ul>
         {posts.map(post => {
           return (
@@ -29,7 +35,7 @@ const Posts = () => {
               <p>
                 {post.willDeliver}
               </p>
-              <p>
+              <p className='username-tag'>
                 {post.author.username}
               </p>
             </li>

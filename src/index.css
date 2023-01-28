@@ -21,7 +21,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: #61dafb;
+  color: red;
 }
 nav a:active {
   color: #61dafb;
@@ -36,20 +36,18 @@ nav ul {
 nav li {
   margin: 0 10px;
 }
-nav li a {
-  color: white;
-  text-decoration: none;
+
+.title {
+  color: red;
+  margin:0 10px;
 }
-nav a {
-  color: white;
-  text-decoration: none;
-}
+
 .posts-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 80%;
+  width: 50%;
 }
 .post-card {
   display: flex;
@@ -60,4 +58,52 @@ nav a {
   padding: 20px;
   border: 1px solid #282c34;
   border-radius: 5px;
+}
+
+.username-tag {
+  color: red;
+}
+
+.register-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.register-fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-fieldset legend {
+  font-size: large;
+}
+
+.register-fieldset input {
+  font-size: medium;
+}
+
+.register-fieldset button {
+  font-size: medium;
+  background-color: #282c34;
+  color: white;
+  border: 2px solid #282c34;
+  border-radius: 4px;
+}
+
+.register-fieldset button:hover {
+  color: red;
+}
+
+.thanks-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
