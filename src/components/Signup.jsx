@@ -32,7 +32,7 @@ const Signup = () => {
       });
       const { data } = await response.json();
       setToken(data.token);
-      localStorage.getItem('token', data.token);
+      localStorage.setItem('token', data.token);
     } catch (error) {
       console.error(error);
       console.log('ERROR: Unable to register.');
