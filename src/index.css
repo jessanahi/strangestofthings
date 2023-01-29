@@ -107,3 +107,47 @@ nav li {
   flex-direction: column;
   align-items: center;
 }
+
+.login-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.login-fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-fieldset legend {
+  font-size: large;
+}
+
+.login-fieldset input {
+  font-size: medium;
+}
+
+.login-fieldset button {
+  font-size: medium;
+  background-color: #282c34;
+  color: white;
+  border: 2px solid #282c34;
+  border-radius: 4px;
+}
+
+.login-fieldset button:hover {
+  color: red;
+}
+
+.loggedin-tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
