@@ -5,6 +5,7 @@ import Posts from './components/Posts';
 import Navibar from './components/Navibar';
 import Signup from './components/Signup';
 import Login from './components/Login';
+import SinglePost from './components/SinglePost';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='login' element={<Login />} />
         <Route path='profile' element={<Profile />} />
         <Route path='posts' element={<Posts />} />
+        <Route path='posts/:id' element={<SinglePost />} />
       </Routes>
     </div>
   );

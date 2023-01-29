@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { POSTS_URL } from './constants';
 
 const Posts = () => {
@@ -38,6 +39,9 @@ const Posts = () => {
               <p className='username-tag'>
                 {post.author.username}
               </p>
+              <Link to={`posts/${post._id}`}>
+              <button>View Details</button>
+              </Link>
             </li>
           )
         })}

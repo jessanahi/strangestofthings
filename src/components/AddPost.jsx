@@ -17,10 +17,6 @@ const AddPost = () => {
     } else {
       localStorage.removeItem('token');
     }
-    setTitle('');
-    setDescription('');
-    setPrice('');
-    setWillDeliver(false);
   }, [token]);
 
   const handleSubmit = async (e) => {
@@ -50,6 +46,10 @@ const AddPost = () => {
       console.error(error);
       console.log('ERROR: Unable to post your strange.');
     }
+    setTitle('');
+    setDescription('');
+    setPrice('');
+    setWillDeliver(false);
   };
   return (
     <div>
