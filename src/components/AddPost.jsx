@@ -54,9 +54,9 @@ const AddPost = () => {
 
   return (
     <div>
-      <h2>Add your strange wares here</h2>
-      <form onSubmit={handleSubmit} className='new-post-form'>
-        <fieldset>
+      <h2 className='addpost-tag'>Make a strange post for anything you have to sell</h2>
+      <form onSubmit={handleSubmit} className='addpost-form'>
+        <fieldset className='addpost-fieldset'>
           <legend>Post New Strangeness</legend>
           <input
             value={title}
@@ -86,7 +86,7 @@ const AddPost = () => {
             onChange={(e) => setLocation(e.target.value)}
           />
           &nbsp;
-          <label>Delivery available: </label>
+          <label>Will Deliver: </label>
           <input
             value={willDeliver}
             type='checkbox'

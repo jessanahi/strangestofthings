@@ -49,6 +49,11 @@ nav li {
   margin: 0 auto;
   width: 50%;
 }
+
+.search-container {
+  display: flex;
+}
+
 .post-card {
   display: flex;
   flex-direction: column;
@@ -66,38 +71,46 @@ nav li {
 
 .motto,
 .register-tag,
-.login-tag {
+.login-tag,
+.addpost-tag,
+.welcomeuser-tag {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .register-form,
-.login-form {
+.login-form,
+.addpost-form {
   display: flex;
   flex-direction: column;
   margin: 0 50px;
 }
 
 .register-fieldset,
-.login-fieldset {
+.login-fieldset,
+.addpost-fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .register-fieldset legend,
-.login-fieldset legend {
+.login-fieldset legend,
+.addpost-fieldset legend {
   font-size: large;
 }
 
 .register-fieldset input,
-.login-fieldset input {
+.login-fieldset input,
+.addpost-fieldset input {
   font-size: medium;
 }
 
 .register-fieldset button,
-.login-fieldset button {
+.login-fieldset button,
+.addpost-fieldset button,
+.post-card button {
   font-size: medium;
   background-color: #282c34;
   color: white;
@@ -106,7 +119,9 @@ nav li {
 }
 
 .register-fieldset button:hover,
-.login-fieldset button:hover {
+.login-fieldset button:hover,
+.addpost-fieldset button:hover,
+.post-card button:hover {
   color: red;
 }
 
