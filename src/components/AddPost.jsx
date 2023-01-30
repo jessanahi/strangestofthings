@@ -38,7 +38,6 @@ const AddPost = () => {
           },
         }),
       });
-      console.log(response);
 
       const { data } = await response.json();
       setPost(data.post);
@@ -49,12 +48,14 @@ const AddPost = () => {
     setTitle('');
     setDescription('');
     setPrice('');
+    setLocation('');
     setWillDeliver(false);
   };
+
   return (
     <div>
       <h2>Add your strange wares here</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='new-post-form'>
         <fieldset>
           <legend>Post New Strangeness</legend>
           <input

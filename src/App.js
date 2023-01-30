@@ -17,7 +17,7 @@ function App() {
         <Route path='login' element={<Login />} />
         <Route path='profile' element={<Profile />} />
         <Route path='posts' element={<Posts />} />
-        <Route path='posts/:id' element={<SinglePost />} />
+        <Route path='/posts/:id' element={<SinglePost />} />
       </Routes>
     </div>
   );

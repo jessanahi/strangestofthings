@@ -42,12 +42,6 @@ nav li {
   margin:0 10px;
 }
 
-.motto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .posts-container {
   display: flex;
   flex-direction: column;
@@ -70,76 +64,39 @@ nav li {
   color: red;
 }
 
-.register-tag {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.register-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0 50px;
-}
-
-.register-fieldset {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.register-fieldset legend {
-  font-size: large;
-}
-
-.register-fieldset input {
-  font-size: medium;
-}
-
-.register-fieldset button {
-  font-size: medium;
-  background-color: #282c34;
-  color: white;
-  border: 2px solid #282c34;
-  border-radius: 4px;
-}
-
-.register-fieldset button:hover {
-  color: red;
-}
-
-.thanks-tag {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+.motto,
+.register-tag,
 .login-tag {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.register-form,
 .login-form {
   display: flex;
   flex-direction: column;
   margin: 0 50px;
 }
 
+.register-fieldset,
 .login-fieldset {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.register-fieldset legend,
 .login-fieldset legend {
   font-size: large;
 }
 
+.register-fieldset input,
 .login-fieldset input {
   font-size: medium;
 }
 
+.register-fieldset button,
 .login-fieldset button {
   font-size: medium;
   background-color: #282c34;
@@ -148,10 +105,12 @@ nav li {
   border-radius: 4px;
 }
 
+.register-fieldset button:hover,
 .login-fieldset button:hover {
   color: red;
 }
 
+.thanks-tag,
 .loggedin-tag {
   display: flex;
   flex-direction: column;
