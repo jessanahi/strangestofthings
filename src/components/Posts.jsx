@@ -40,8 +40,7 @@ const Posts = () => {
       <h2>Search all the strange posts</h2>
       <div className='search-container'>
         <label>
-          By title:
-          &nbsp;
+          By title: &nbsp;
           <input
             type='text'
             name='title'
@@ -49,9 +48,9 @@ const Posts = () => {
             onChange={handleFilter}
           />
         </label>
+        &nbsp;
         <label>
-          By price:
-          &nbsp;
+          By price: &nbsp;
           <input
             type='text'
             name='price'

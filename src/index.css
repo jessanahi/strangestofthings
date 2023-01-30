@@ -52,6 +52,7 @@ nav li {
 
 .search-container {
   display: flex;
+  padding: 20px;
 }
 
 .post-card {
